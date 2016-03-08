@@ -88,6 +88,8 @@ router.get('/', function (req, res, next) {
                     "position":10,
                     "nickname":"작성자1",
                     "content": "내용1",
+                    "limit_people": 3,
+                    "decide_people": 2,
                     "photo":"https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
                     "pid":1
                 },
@@ -98,6 +100,8 @@ router.get('/', function (req, res, next) {
                     "position":11,
                     "nickname":"작성자2",
                     "content": "내용2",
+                    "limit_people": 3,
+                    "decide_people": 1,
                     "photo":"https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
                     "pid":2
                 },
@@ -138,6 +142,8 @@ router.get('/', function (req, res, next) {
                     "position":15,
                     "nickname":"작성자6",
                     "content": "내용6",
+                    "limit_people": 5,
+                    "decide_people": 1,
                     "photo":"https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
                     "pid":6
                 },
