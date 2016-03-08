@@ -75,19 +75,113 @@ router.get('/:pid', function (req, res, next) {
 // 10. 매칭/스토리 목록 보기
 router.get('/', function (req, res, next) {
     var result = {
-        "success": {
-            "message": "글 목록보기에 성공했습니다.",
-            "page": req.query.page,
-            "pageLimit": 10,
-            "data": [{
-                "title": "제목",
-                "date": "작성일시",
-                "genre": "장르",
-                "position": "포지션",
-                "nickname": "작성자",
-                "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
-                "pid": "매칭/스토리번호"
-            }]
+        "success":
+        {
+            "message":"글 목록보기에 성공했습니다.",
+            "page":"1",
+            "pageLimit":10,
+            "data":[
+                {
+                    "title":"제목1",
+                    "date":"작성일시1",
+                    "genre":0,
+                    "position":10,
+                    "nickname":"작성자1",
+                    "content": "내용1",
+                    "photo":"https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                    "pid":1
+                },
+                {
+                    "title":"제목2",
+                    "date":"작성일시2",
+                    "genre":1,
+                    "position":11,
+                    "nickname":"작성자2",
+                    "content": "내용2",
+                    "photo":"https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                    "pid":2
+                },
+                {
+                    "title":"제목3",
+                    "date":"작성일시3",
+                    "genre":3,
+                    "position":13,
+                    "nickname":"작성자3",
+                    "content": "내용3",
+                    "photo":"https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                    "pid":3
+                },
+                {
+                    "title":"제목4",
+                    "date":"작성일시4",
+                    "genre":3,
+                    "position":13,
+                    "nickname":"작성자4",
+                    "content": "내용4",
+                    "photo":"https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                    "pid": 4
+                },
+                {
+                    "title":"제목5",
+                    "date":"작성일시5",
+                    "genre":4,
+                    "position":14,
+                    "nickname":"작성자5",
+                    "content": "내용5",
+                    "photo":"https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                    "pid":5
+                },
+                {
+                    "title":"제목6",
+                    "date":"작성일시6",
+                    "genre":5,
+                    "position":15,
+                    "nickname":"작성자6",
+                    "content": "내용6",
+                    "photo":"https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                    "pid":6
+                },
+                {
+                    "title":"제목7",
+                    "date":"작성일시7",
+                    "genre":6,
+                    "position":16,
+                    "nickname":"작성자7",
+                    "content": "내용7",
+                    "photo":"https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                    "pid":7
+                },
+                {
+                    "title":"제목8",
+                    "date":"작성일시8",
+                    "genre":7,
+                    "position":10,
+                    "nickname":"작성자8",
+                    "content": "내용8",
+                    "photo":"https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                    "pid":8
+                },
+                {
+                    "title":"제목9",
+                    "date":"작성일시9",
+                    "genre":0,
+                    "position":11,
+                    "nickname":"작성자9",
+                    "content": "내용9",
+                    "photo":"https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                    "pid":9
+                },
+                {
+                    "title":"제목10",
+                    "date":"작성일시10",
+                    "genre":2,
+                    "position":11,
+                    "nickname":"작성자10",
+                    "content": "내용10",
+                    "photo":"https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                    "pid":10
+                }
+            ]
         }
     };
     res.json(result);
@@ -144,30 +238,34 @@ router.get('/:pid/replies', function (req, res, next) {
                 "genre": 1,
                 "position": 10,
                 "nickname" : "작성자",
+                "content": "내용1",
                 "photo" : "https://s3.ap-northeast-2.amazonaws.com/chuing/test/upload_1115ef30b30e689aec357078dbb2867e.jpg",
                 "rid": 1
             },
                 {
                     "date": "작성일시",
-                    "genre": "장르",
-                    "position": "포지션",
+                    "genre": 2,
+                    "position": 11,
                     "nickname" : "작성자",
+                    "content": "내용2",
                     "photo" : "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_d11644be2b7354e72b89cfeb602ab99c.jpg",
                     "pid": 2
             },
                 {
                     "date": "작성일시",
-                    "genre": "장르",
-                    "position": "포지션",
+                    "genre": 3,
+                    "position": 12,
                     "nickname" : "작성자",
+                    "content": "내용3",
                     "photo" : "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_06026b646fc425bf48932647531d8c59.jpg",
                     "pid": 3
             },
                 {
                     "date": "작성일시",
-                    "genre": "장르",
-                    "position": "포지션",
+                    "genre": 4,
+                    "position": 13,
                     "nickname": "작성자",
+                    "content": "내용4",
                     "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_9a2b496776e9feda0e85fac653ed6ea7.jpg",
                     "pid": 4
                 }]
