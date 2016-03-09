@@ -342,7 +342,7 @@ router.get('/:pid/replies', function (req, res, next) {
                     "nickname" : "작성자",
                     "content": "내용2",
                     "photo" : "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_d11644be2b7354e72b89cfeb602ab99c.jpg",
-                    "pid": 2
+                    "rid": 2
             },
                 {
                     "date": "작성일시",
@@ -351,7 +351,7 @@ router.get('/:pid/replies', function (req, res, next) {
                     "nickname" : "작성자",
                     "content": "내용3",
                     "photo" : "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_06026b646fc425bf48932647531d8c59.jpg",
-                    "pid": 3
+                    "rid": 3
             },
                 {
                     "date": "작성일시",
@@ -360,7 +360,7 @@ router.get('/:pid/replies', function (req, res, next) {
                     "nickname": "작성자",
                     "content": "내용4",
                     "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_9a2b496776e9feda0e85fac653ed6ea7.jpg",
-                    "pid": 4
+                    "rid": 4
                 }]
         }
     }
