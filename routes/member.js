@@ -28,8 +28,9 @@ router.get('/me', function (req, res, next) {
                 "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_edce5a199975bbc81bc7fd0399cdb5f8.jpg",
                 "nickname": "yong",
                 "intro": "나는 용이라고해용 잘 부탁해용",
-                "genre": 1,
-                "position": 10
+                "genre": 3,
+                "position": 10,
+                "mid": 1
             }
         });
     } else {
