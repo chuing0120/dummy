@@ -22,13 +22,13 @@ router.post('/login', function (req, res, next) {
         next(err)
     }
 });
-// 18. 로그아웃
+// 9. 로그아웃
 router.post('/logout', function(req, res, next) {
 
     var result =
     {
         "success": {
-            "message": "로그아웃이 되었습니다."
+            "message": "로그아웃이 정상적으로 처리되었습니다"
         }
     };
     res.json(result);
