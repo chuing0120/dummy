@@ -13,8 +13,11 @@ router.post('/', function (req, res, next) {
         };
         res.json(result);
     } else {
-        var err = new Error('SSL/TLS Upgrade Required!!!');
-        err.status = 426
+
+        var err = new Error();
+        err.message = {
+            "message" : "SSL/TLS Upgrade Required"
+        };
         next(err)
     }
 });
@@ -34,8 +37,10 @@ router.get('/me', function (req, res, next) {
             }
         });
     } else {
-        var err = new Error('SSL/TLS Upgrade Required!!!');
-        err.status = 426
+        var err = new Error();
+        err.message = {
+            "message" : "SSL/TLS Upgrade Required"
+        };
         next(err)
     }
 });
@@ -54,8 +59,10 @@ router.get('/:mid', function (req, res, next) { // 미들웨어
             }
         });
     } else {
-        var err = new Error('SSL/TLS Upgrade Required!!!');
-        err.status = 426
+        var err = new Error();
+        err.message = {
+            "message" : "SSL/TLS Upgrade Required"
+        };
         next(err)
     }
 });
@@ -74,13 +81,15 @@ router.put('/me', function (req, res, next) { // 미들웨어
             }
         });
     } else {
-        var err = new Error('SSL/TLS Upgrade Required!!!');
-        err.status = 426
+        var err = new Error();
+        err.message = {
+            "message" : "SSL/TLS Upgrade Required"
+        };
         next(err)
     }
 });
 // 16. 연동회원 트랙 상세목록 보기(HTTP)
-router.get('/', function (req, res, next) {
+router.get('/:mid/tracks', function (req, res, next) {
     var result = {
         "success": {
             "message": "연동정보(트랙) 불러오기 성공",

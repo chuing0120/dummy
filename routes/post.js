@@ -14,9 +14,11 @@ router.post('/', function (req, res, next) {
         };
         res.json(result);
     } else {
-        var err = new Error('SSL/TLS Upgrade Required!!!'); // =  err.message ?!
-        err.status = 426;
-        next(err);
+        var err = new Error();
+        err.message = {
+            "message" : "SSL/TLS Upgrade Required"
+        };
+        next(err)
     }
 });
 // 7. 매칭/스토리 수정

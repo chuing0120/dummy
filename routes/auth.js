@@ -15,8 +15,10 @@ router.post('/login', function (req, res, next) {
         };
         res.json(result);
     } else {
-        var err = new Error('SSL/TLS Upgrade Required!!!');
-        err.status = 426;
+        var err = new Error();
+        err.message = {
+            "message" : "SSL/TLS Upgrade Required"
+        };
         next(err)
     }
 });
