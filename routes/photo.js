@@ -7,7 +7,7 @@ var router = express.Router();
 router.post('/', function (req, res, next) {
 	if (req.secure) {
 		var result = {
-			"success": "파일이 업로드가 완료되었습니다."
+			"success": "파일 업로드 완료"
 			}
 		res.json(result);
 	} else {

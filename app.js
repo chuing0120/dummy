@@ -9,7 +9,6 @@ var session = require('express-session');
 var auth = require('./routes/auth');
 var member = require('./routes/member');
 var post = require('./routes/post');
-var track = require('./routes/track');
 var photo = require('./routes/photo');
 // router level middleware modules loading
 
@@ -35,7 +34,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/auth', auth);
 app.use('/members', member);
 app.use('/posts', post);
-app.use('/tracks', track);
 app.use('/photos', photo);
 
 app.use(function (req, res, next) {

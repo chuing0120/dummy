@@ -78,5 +78,18 @@ router.put('/me', function (req, res, next) { // 미들웨어
         next(err)
     }
 });
+// 16. 연동회원 트랙 상세목록 보기(HTTP)
+router.get('/', function (req, res, next) {
+    var result = {
+        "success": {
+            "message": "연동정보(트랙) 불러오기 성공",
+            "success": [
+                {"url": "http://api.soundcloud.com/users/208610688/tracks?client_id=71968fd976cc5c0693a7d6b76ea05213"},
+                {"url": "http://api.soundcloud.com/users/210343410/tracks?client_id=71968fd976cc5c0693a7d6b76ea05213"},
+            ]
+        }
+    };
+    res.json(result);
+});
 
 module.exports = router;
