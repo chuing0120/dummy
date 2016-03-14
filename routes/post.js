@@ -1,6 +1,4 @@
 var express = require('express');
-var async = require('async');
-var bcrypt = require('bcrypt');
 
 var router = express.Router();
 
@@ -69,7 +67,8 @@ router.get('/', function (req, res, next) {
                         "limit_people": 3,
                         "decide_people": 2,
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
-                        "pid": 1
+                        "pid": 1,
+                        "mid": 3
                     },
                     {
                         "title": "제목2",
@@ -81,7 +80,8 @@ router.get('/', function (req, res, next) {
                         "limit_people": 3,
                         "decide_people": 1,
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
-                        "pid": 2
+                        "pid": 2,
+                        "mid": 6
                     },
                     {
                         "title": "제목3",
@@ -91,7 +91,8 @@ router.get('/', function (req, res, next) {
                         "nickname": "작성자3",
                         "content": "내용3",
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
-                        "pid": 3
+                        "pid": 3,
+                        "mid": 9
                     },
                     {
                         "title": "제목4",
@@ -101,7 +102,8 @@ router.get('/', function (req, res, next) {
                         "nickname": "작성자4",
                         "content": "내용4",
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
-                        "pid": 4
+                        "pid": 4,
+                        "mid": 2
                     },
                     {
                         "title": "제목5",
@@ -111,7 +113,8 @@ router.get('/', function (req, res, next) {
                         "nickname": "작성자5",
                         "content": "내용5",
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
-                        "pid": 5
+                        "pid": 5,
+                        "mid": 1
                     },
                     {
                         "title": "제목6",
@@ -123,7 +126,8 @@ router.get('/', function (req, res, next) {
                         "limit_people": 5,
                         "decide_people": 1,
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
-                        "pid": 6
+                        "pid": 6,
+                        "mid": 8
                     },
                     {
                         "title": "제목7",
@@ -133,7 +137,8 @@ router.get('/', function (req, res, next) {
                         "nickname": "작성자7",
                         "content": "내용7",
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
-                        "pid": 7
+                        "pid": 7,
+                        "mid": 11
                     },
                     {
                         "title": "제목8",
@@ -143,7 +148,8 @@ router.get('/', function (req, res, next) {
                         "nickname": "작성자8",
                         "content": "내용8",
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
-                        "pid": 8
+                        "pid": 8,
+                        "mid": 12
                     },
                     {
                         "title": "제목9",
@@ -153,7 +159,8 @@ router.get('/', function (req, res, next) {
                         "nickname": "작성자9",
                         "content": "내용9",
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
-                        "pid": 9
+                        "pid": 9,
+                        "mid": 4
                     },
                     {
                         "title": "제목10",
@@ -163,7 +170,8 @@ router.get('/', function (req, res, next) {
                         "nickname": "작성자10",
                         "content": "내용10",
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
-                        "pid": 10
+                        "pid": 10,
+                        "mid": 8
                     }
                 ]
             }
@@ -185,7 +193,8 @@ router.get('/', function (req, res, next) {
                         "limit_people": 3,
                         "decide_people": 2,
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
-                        "pid": 1
+                        "pid": 1,
+                        "mid": 15
                     },
                     {
                         "title": "제목2",
@@ -197,7 +206,8 @@ router.get('/', function (req, res, next) {
                         "limit_people": 3,
                         "decide_people": 1,
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
-                        "pid": 2
+                        "pid": 2,
+                        "mid": 11
                     },
                     {
                         "title": "제목6",
@@ -209,7 +219,8 @@ router.get('/', function (req, res, next) {
                         "limit_people": 5,
                         "decide_people": 1,
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
-                        "pid": 6
+                        "pid": 6,
+                        "mid": 7
                     },
                     {
                         "title": "제목11",
@@ -221,7 +232,8 @@ router.get('/', function (req, res, next) {
                         "limit_people": 3,
                         "decide_people": 2,
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
-                        "pid": 11
+                        "pid": 11,
+                        "mid": 13
                     },
                     {
                         "title": "제목12",
@@ -233,7 +245,8 @@ router.get('/', function (req, res, next) {
                         "limit_people": 3,
                         "decide_people": 1,
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
-                        "pid": 12
+                        "pid": 12,
+                        "mid": 20
                     },
                     {
                         "title": "제목16",
@@ -245,7 +258,8 @@ router.get('/', function (req, res, next) {
                         "limit_people": 5,
                         "decide_people": 1,
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
-                        "pid": 16
+                        "pid": 16,
+                        "mid": 16
                     }
                 ]
             }
@@ -258,17 +272,8 @@ router.post('/:pid/replies', function (req, res, next) {
     var result =
     {
         "success": {
-            "message": "글 댓글 달기 성공",
-            "data" : [
-                {
-                "nickname": "닉네임",
-                "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
-                "genre": "장르",
-                "position": "포지션",
-                "content": "내용"
+            "message": "글 댓글 달기 성공"
             }
-              ]
-        }
     };
     res.json(result);
 });
@@ -316,7 +321,8 @@ router.get('/:pid/replies', function (req, res, next) {
                         "nickname" : "작성자",
                         "content": "내용1",
                         "photo" : "https://s3.ap-northeast-2.amazonaws.com/chuing/test/upload_1115ef30b30e689aec357078dbb2867e.jpg",
-                        "rid": 1
+                        "rid": 1,
+                        "mid": 1
                     },
                     {
                         "date": "작성일시",
@@ -325,7 +331,8 @@ router.get('/:pid/replies', function (req, res, next) {
                         "nickname" : "작성자",
                         "content": "내용2",
                         "photo" : "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_d11644be2b7354e72b89cfeb602ab99c.jpg",
-                        "rid": 2
+                        "rid": 2,
+                        "mid": 3
                      },
                     {
                         "date": "작성일시",
@@ -334,7 +341,8 @@ router.get('/:pid/replies', function (req, res, next) {
                         "nickname" : "작성자",
                         "content": "내용3",
                         "photo" : "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_06026b646fc425bf48932647531d8c59.jpg",
-                        "rid": 3
+                        "rid": 3,
+                        "mid": 5
                     },
                     {
                         "date": "작성일시",
@@ -343,7 +351,8 @@ router.get('/:pid/replies', function (req, res, next) {
                         "nickname": "작성자",
                         "content": "내용4",
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_9a2b496776e9feda0e85fac653ed6ea7.jpg",
-                        "rid": 4
+                        "rid": 4,
+                        "mid": 2
                     }
                 ]
         }
