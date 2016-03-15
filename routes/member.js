@@ -26,7 +26,7 @@ router.get('/me', function (req, res, next) {
         res.json({
             "success": {
                         "message": "회원프로필 정보가 정상적으로 조회되었습니다",
-                "data" : [
+                "data" :
                     {
                         "username": "yong@exe.com",
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_edce5a199975bbc81bc7fd0399cdb5f8.jpg",
@@ -36,7 +36,6 @@ router.get('/me', function (req, res, next) {
                         "position": 10,
                         "mid": 1
                     }
-                ]
             }
         });
     } else {
