@@ -321,51 +321,51 @@ router.delete('/:pid/replies/:rid', function (req, res, next) {
 router.get('/:pid/replies', function (req, res, next) {
     var result = {
         "success": {
-            "message": "글 댓글 불러오기 성공"
-            //"page": 2,
-            //"pageLimit": 10,
-        //"data": [
-        //            {
-        //                "date": "작성일시",
-        //                "genre": 1,
-        //                "position": 10,
-        //                "nickname" : "작성자",
-        //                "content": "내용1",
-        //                "photo" : "https://s3.ap-northeast-2.amazonaws.com/chuing/test/upload_1115ef30b30e689aec357078dbb2867e.jpg",
-        //                "rid": 1,
-        //                "mid": 1
-        //            },
-        //            {
-        //                "date": "작성일시",
-        //                "genre": 2,
-        //                "position": 11,
-        //                "nickname" : "작성자",
-        //                "content": "내용2",
-        //                "photo" : "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_d11644be2b7354e72b89cfeb602ab99c.jpg",
-        //                "rid": 2,
-        //                "mid": 3
-        //             },
-        //            {
-        //                "date": "작성일시",
-        //                "genre": 3,
-        //                "position": 12,
-        //                "nickname" : "작성자",
-        //                "content": "내용3",
-        //                "photo" : "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_06026b646fc425bf48932647531d8c59.jpg",
-        //                "rid": 3,
-        //                "mid": 5
-        //            },
-        //            {
-        //                "date": "작성일시",
-        //                "genre": 4,
-        //                "position": 13,
-        //                "nickname": "작성자",
-        //                "content": "내용4",
-        //                "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_9a2b496776e9feda0e85fac653ed6ea7.jpg",
-        //                "rid": 4,
-        //                "mid": 2
-        //            }
-        //        ]
+            "message": "글 댓글 불러오기 성공",
+            "page": 2,
+            "pageLimit": 10,
+        "data": [
+                    {
+                        "date": "작성일시",
+                        "genre": 1,
+                        "position": 10,
+                        "nickname" : "작성자",
+                        "content": "내용1",
+                        "photo" : "https://s3.ap-northeast-2.amazonaws.com/chuing/test/upload_1115ef30b30e689aec357078dbb2867e.jpg",
+                        "rid": 1,
+                        "mid": 1
+                    },
+                    {
+                        "date": "작성일시",
+                        "genre": 2,
+                        "position": 11,
+                        "nickname" : "작성자",
+                        "content": "내용2",
+                        "photo" : "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_d11644be2b7354e72b89cfeb602ab99c.jpg",
+                        "rid": 2,
+                        "mid": 3
+                     },
+                    {
+                        "date": "작성일시",
+                        "genre": 3,
+                        "position": 12,
+                        "nickname" : "작성자",
+                        "content": "내용3",
+                        "photo" : "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_06026b646fc425bf48932647531d8c59.jpg",
+                        "rid": 3,
+                        "mid": 5
+                    },
+                    {
+                        "date": "작성일시",
+                        "genre": 4,
+                        "position": 13,
+                        "nickname": "작성자",
+                        "content": "내용4",
+                        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_9a2b496776e9feda0e85fac653ed6ea7.jpg",
+                        "rid": 4,
+                        "mid": 2
+                    }
+                ]
         }
     }
     res.json(result);
