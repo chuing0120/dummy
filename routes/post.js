@@ -1,55 +1,33 @@
-
 var express = require('express');
-var formidable = require('formidable');
-var path = require('path');
-
 
 var router = express.Router();
 
 // 6. 매칭/스토리 쓰기 (HTTPS)
 router.post('/', function (req, res, next) {
+    //console.log(req);
     if (req.secure) {
-        if ( req.headers['content-type'] === 'application/x-www-form-urlencoded') {
+//        if ( req.header['content-type'] === 'application/x-www-form-urlencoded') {
+//            var result = {
+//                "success": {
+//                    "message": "게시글이 작성되었습니다.2"
+//                }
+//            };
+//            console.log('조건',req);
+//        } else {
             var result = {
                 "success": {
-                    "message": "body로 게시글이 작성되었습니다."
+                    "message": "게시글이 작성되었습니다."
                 }
             };
-            res.json(result);
+//            console.log('엘스',req);
+//        }
 
-        } else if ( /^multipart\/form-data/.test( req.header('content-type') ) ) { //폼데이타
-            var form = new formidable.IncomingForm();
-
-            form.uploadDir = path.join(__dirname, '../uploads');
-            form.keepExtensions = true;
-            form.multiples = true;
-            form.maxFieldsSize = 10 * 1024 * 1024;       // 10MB !!
-
-            form.parse(req, function (err, fields, files) {
-                if (err) {
-                    var err = new Error();
-                    err.message = "form-data 파싱 에러";
-                    next(err);
-                }
-                var result = {
-                    "success": {
-                        "message": "form-data로 게시글이 작성되었습니다."
-                    }
-                };
-                //result.success.body = req.body;
-                //result.success.fields = fields;
-                //result.success.files = files;
-                res.json(result);
-            });
-        } else {
-            res.json('폼도 아니고 바디도 아니군요')
-        }
-
+        res.json(result);
     } else {
         var err = new Error();
         err.message = "SSL/TLS Upgrade Required";
         err.status = 426;
-        next(err);
+        next(err)
     }
 });
 // 7. 매칭/스토리 수정
