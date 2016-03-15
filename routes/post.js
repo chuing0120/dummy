@@ -42,7 +42,7 @@ router.post('/', function (req, res, next) {
                 res.json(result);
             });
         } else {
-            res.json('폼도 아니고 바디도 아니군요')
+            res.json('폼도 아니고 바디도 아니군요');
         }
 
     } else {
@@ -54,22 +54,34 @@ router.post('/', function (req, res, next) {
 });
 // 7. 매칭/스토리 수정
 router.put('/:pid', function (req, res, next) {
-    var result = {
-        "success": {
-            "message": "게시글이 수정되었습니다."
-        //"data" :  [
-        //    {
-        //        "title": "제목",
-        //        "content": "내용",
-        //        "nickname": "별명",
-        //        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_edce5a199975bbc81bc7fd0399cdb5f8.jpg",
-        //        "limit_people": 5,
-        //        "decide_people": 2
-        //    }
-        //  ]
-        }
-    };
-    res.json(result);
+    if ( req.headers['content-type'] === 'application/x-www-form-urlencoded') {
+        var result = {
+            "success": {
+                "message": "body게시글이 수정되었습니다."
+                //"data" :  [
+                //    {
+                //        "title": "제목",
+                //        "content": "내용",
+                //        "nickname": "별명",
+                //        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_edce5a199975bbc81bc7fd0399cdb5f8.jpg",
+                //        "limit_people": 5,
+                //        "decide_people": 2
+                //    }
+                //  ]
+            }
+        };
+        res.json(result);
+    } else if ( /^multipart\/form-data/.test( req.header('content-type') ) ) { //폼데이타
+
+        var result = {
+            "success": {
+                "message": "form-data게시글이 수정되었습니다."
+            }
+        };
+        res.json(result);
+    } else {
+        res.json('폼도 아니고 바디도 아니군요');
+    }
 });
 // 8. 매칭/스토리 삭제
 router.delete('/:pid', function (req, res, next) {
