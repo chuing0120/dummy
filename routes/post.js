@@ -111,7 +111,7 @@ router.get('/', function (req, res, next) {
                         "content": "내용1",
                         "limit_people": 3,
                         "decide_people": 2,
-                        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                        "photo": "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/1.jpg",
                         "pid": 1,
                         "mid": 3
                     },
@@ -124,7 +124,7 @@ router.get('/', function (req, res, next) {
                         "content": "내용2",
                         "limit_people": 3,
                         "decide_people": 1,
-                        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                        "photo": "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/2.jpg",
                         "pid": 2,
                         "mid": 6
                     },
@@ -135,7 +135,7 @@ router.get('/', function (req, res, next) {
                         "position": 13,
                         "nickname": "작성자3",
                         "content": "내용3",
-                        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                        "photo": "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/3.jpg",
                         "pid": 3,
                         "mid": 9
                     },
@@ -146,7 +146,7 @@ router.get('/', function (req, res, next) {
                         "position": 13,
                         "nickname": "작성자4",
                         "content": "내용4",
-                        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                        "photo": "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/2.jpg",
                         "pid": 4,
                         "mid": 2
                     },
@@ -157,7 +157,7 @@ router.get('/', function (req, res, next) {
                         "position": 14,
                         "nickname": "작성자5",
                         "content": "내용5",
-                        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                        "photo": "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/1.jpg",
                         "pid": 5,
                         "mid": 1
                     },
@@ -170,7 +170,7 @@ router.get('/', function (req, res, next) {
                         "content": "내용6",
                         "limit_people": 5,
                         "decide_people": 1,
-                        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                        "photo": "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/2.jpg",
                         "pid": 6,
                         "mid": 8
                     },
@@ -181,7 +181,7 @@ router.get('/', function (req, res, next) {
                         "position": 16,
                         "nickname": "작성자7",
                         "content": "내용7",
-                        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                        "photo": "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/3.jpg",
                         "pid": 7,
                         "mid": 11
                     },
@@ -192,7 +192,7 @@ router.get('/', function (req, res, next) {
                         "position": 10,
                         "nickname": "작성자8",
                         "content": "내용8",
-                        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                        "photo": "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/2.jpg",
                         "pid": 8,
                         "mid": 12
                     },
@@ -203,7 +203,7 @@ router.get('/', function (req, res, next) {
                         "position": 11,
                         "nickname": "작성자9",
                         "content": "내용9",
-                        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                        "photo": "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/1.jpg",
                         "pid": 9,
                         "mid": 4
                     },
@@ -214,7 +214,7 @@ router.get('/', function (req, res, next) {
                         "position": 11,
                         "nickname": "작성자10",
                         "content": "내용10",
-                        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                        "photo": "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/2.jpg",
                         "pid": 10,
                         "mid": 8
                     }
@@ -237,7 +237,7 @@ router.get('/', function (req, res, next) {
                         "content": "내용1",
                         "limit_people": 3,
                         "decide_people": 2,
-                        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                        "photo": "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/1.jpg",
                         "pid": 1,
                         "mid": 15
                     },
@@ -250,7 +250,7 @@ router.get('/', function (req, res, next) {
                         "content": "내용2",
                         "limit_people": 3,
                         "decide_people": 1,
-                        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                        "photo": "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/2.jpg",
                         "pid": 2,
                         "mid": 11
                     },
@@ -263,7 +263,7 @@ router.get('/', function (req, res, next) {
                         "content": "내용6",
                         "limit_people": 5,
                         "decide_people": 1,
-                        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                        "photo": "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/2.jpg",
                         "pid": 6,
                         "mid": 7
                     },
@@ -276,7 +276,7 @@ router.get('/', function (req, res, next) {
                         "content": "내용11",
                         "limit_people": 3,
                         "decide_people": 2,
-                        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                        "photo": "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/3.jpg",
                         "pid": 11,
                         "mid": 13
                     },
@@ -289,7 +289,7 @@ router.get('/', function (req, res, next) {
                         "content": "내용12",
                         "limit_people": 3,
                         "decide_people": 1,
-                        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                        "photo": "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/3.jpg",
                         "pid": 12,
                         "mid": 20
                     },
@@ -302,7 +302,7 @@ router.get('/', function (req, res, next) {
                         "content": "내용16",
                         "limit_people": 5,
                         "decide_people": 1,
-                        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_e98cd8a3aefc37f3c9e6f1b81c13c461.jpg",
+                        "photo": "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/3.jpg",
                         "pid": 16,
                         "mid": 16
                     }
@@ -365,7 +365,7 @@ router.get('/:pid/replies', function (req, res, next) {
                         "position": 10,
                         "nickname" : "작성자",
                         "content": "내용1",
-                        "photo" : "https://s3.ap-northeast-2.amazonaws.com/chuing/test/upload_1115ef30b30e689aec357078dbb2867e.jpg",
+                        "photo" : "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/1.jpg",
                         "rid": 1,
                         "mid": 1
                     },
@@ -375,7 +375,7 @@ router.get('/:pid/replies', function (req, res, next) {
                         "position": 11,
                         "nickname" : "작성자",
                         "content": "내용2",
-                        "photo" : "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_d11644be2b7354e72b89cfeb602ab99c.jpg",
+                        "photo" : "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/2.jpg",
                         "rid": 2,
                         "mid": 3
                      },
@@ -385,7 +385,7 @@ router.get('/:pid/replies', function (req, res, next) {
                         "position": 12,
                         "nickname" : "작성자",
                         "content": "내용3",
-                        "photo" : "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_06026b646fc425bf48932647531d8c59.jpg",
+                        "photo" : "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/3.jpg",
                         "rid": 3,
                         "mid": 5
                     },
@@ -395,7 +395,7 @@ router.get('/:pid/replies', function (req, res, next) {
                         "position": 13,
                         "nickname": "작성자",
                         "content": "내용4",
-                        "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_9a2b496776e9feda0e85fac653ed6ea7.jpg",
+                        "photo": "https://s3.ap-northeast-2.amazonaws.com/gooyong/dummy/4.jpg",
                         "rid": 4,
                         "mid": 2
                     }
