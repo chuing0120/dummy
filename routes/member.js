@@ -52,7 +52,7 @@ router.get('/:mid', function (req, res, next) { // 미들웨어
         res.json({
             "success": {
                         "message": "회원프로필 정보가 정상적으로 조회되었습니다",
-                "data" : [
+                "data" :
                     {
                         "username": "chuing0120@naver.com",
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_edce5a199975bbc81bc7fd0399cdb5f8.jpg",
@@ -62,7 +62,7 @@ router.get('/:mid', function (req, res, next) { // 미들웨어
                         "position": 11,
                         "mid": 2
                     }
-                ]
+
             }
         });
     } else {
@@ -79,7 +79,7 @@ router.put('/me', function (req, res, next) { // 미들웨어
         res.json({
             "success": {
                         "message": "회원 프로필 수정이 정상적으로 처리되었습니다.",
-                "data" : [
+                "data" :
                     {
                         "username": "yong@exe.com",
                         "photo": "https://chuing.s3.ap-northeast-2.amazonaws.com/test/upload_edce5a199975bbc81bc7fd0399cdb5f8.jpg",
@@ -89,7 +89,7 @@ router.put('/me', function (req, res, next) { // 미들웨어
                         "position": 10,
                         "mid": 1
                     }
-                ]
+
             }
         });
     } else {
